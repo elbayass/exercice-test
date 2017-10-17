@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+		<!-- <link rel="stylesheet" href="theme.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<!-- <link rel="stylesheet"type="text/css" href="sticky.css"> -->
+		<!-- <link rel="stylesheet" media="screen and (min-width: 640px)" href="smallscreen.css" type="text/css" /> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="jquery.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="jquery.sticky.js"></script>
+<script>
+			  $(document).ready(function(){
+				$(".menu").sticky({topSpacing:-30});
+				$(".menu").sticky({zIndex:4});
+				});
+
+			//  $(document).ready(function(){
+			// 	 var offset = $(".menu").offset().top;
+			// 	$(document).scroll(function(){
+			// 		 var scrollTop = $(document).scrollTop();
+			// 		if(scrollTop > offset){
+			// 			$(".menu").css("position", "fixed");
+			// 			$(".menu").css("width", "960px");
+			// 		 	$(".menu").css("z-index", "4");
+			// 		 	$(".menu").css("margin-top", "-85px");
+			// 			$(".menu").css("box-shadow", "5px 5px 25px 0 #391909");
+			// 		};
+			// 		 else {
+			// 			 $(".menu").css("position", "relative");
+			// 			 $(".menu").css("margin-top", "30px");
+			// 			 $(".menu").css("box-shadow", "none");
+			// 		};
+			// 	});
+			// });
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".Button").click(function(){
+					$("#extensions-cache").slideToggle("400");
+					jQuery('html, body').animate({
+						scrollTop: jQuery(document).height()
+					}
+					,400);
+				});
+				$(".feature2").click(function(){
+					$(".header-cache").slideToggle("400");
+					$('html, body').animate({
+						scrollBottom: jQuery(document).height()
+					}
+					,400);
+				});
+					$(".barre-rech-mobile").click(function(){
+						$(".cont-input-rech-barre-mobile").slideToggle("400");
+						jQuery('html, body').animate({
+							scrollBottom: jQuery(document).height()
+						}
+						,400);
+					});
+			});
+
+
+			$(".scroll").hide();
+
+			$(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 180) {
+                    $('.scroll').fadeIn(180);
+                } else {
+                    $('.scroll').fadeOut(0);
+                }
+            });
+});
+	$(function() {
+
+			$('.dropdown-togglee').click(function(){
+			$(this).next('.dropdown').toggle();
+			});
+
+			$(document).click(function(e) {
+			  var target = e.target;
+			  if (!$(target).is('.dropdown-togglee') && !$(target).parents().is('.dropdown-togglee')) {
+			    $('.dropdown').hide();
+			  }
+			});
+
+			});
+</script>
+	</head>
+	<body>
+		<div class="header-cache" style="background: #00b9e4;  display: none;">
+			<div class="flash-actu1" id="flash-actu1">
+				<div class="flash-actu-container1">
+					<div class="Recevoir-les-flash">
+						Recevoir les flash actus INSTANT Vitalité
+					</div>
+				<nav class="nav-dropdown-bas">
+					<a class="dropdown-togglee" style="width:300px">Tous les articles</a>
+						<ul class="dropdown">
+			  			<li><a>Culture</a></li>
+							<li class="separator"></li>
+			  			<li><a>Santé,sport & bien-etre</a></li>
+			  			<li><a>Convivialité & Gastronomie</a></li>
+			  			<li><a>Tous les articles</a></li>
+						</ul>
+				</nav>
+
+				<input id="input-flash-info2" type="text" name="" value type="search" placeholder="Adresse mail">
+				<button class="bouton-flash" type="button" name="button">OK</button>
+			</div>
+		</div>
+	</div>
+	<div class="header" id="header">
+		<div class="container">
+			<div class="seach">
+				<ul>
+					<li class="feature">
+						<input class="input-flash-info1"value="" type="search" name="s" placeholder="RECHERCHER">
+						<img class="loupe-blanc" src="loupe-blanc-16.png" alt="">
+					</li>
+					<li class="feature2">
+						<img class="courrier-blanc" src="courrier-blanc-24.png" alt="">
+						<p class="ase">
+							FLASH-ACTU
+						</p>
+					</li>
+				</ul>
+			</div>
+
+				<form class="cont-input-rech-barre-mobile" action="" method="post">
+					<input class="imput-rech-barre-rech-mobile" type="text" name="" value="" placeholder="RECHERCHER">
+				</form>
+
+<!-- Static navbar -->
+			<nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+					<div class="btn-group">
+					  <span id="bouton-nav-mobile" class="bouton-nav-mobile btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="menu-responsive.png" alt="menu-responsiv">
+						NAVIGATION
+					  </span>
+					  <div class="dropdown-menu">
+					    <ul class="ul-dropdown-menu-mobile">
+					    	<li class="ul-dropdown-menu-mobile-li-1">TOUS LES ARTICLES</li>
+								<li class="ul-dropdown-menu-mobile-li-2">CONVIVIALITÉ & GASTRONOMIE</li>
+								<li class="ul-dropdown-menu-mobile-li-2">SANTÉ,SPORT & BIEN-ETRE</li>
+								<li class="ul-dropdown-menu-mobile-li-2">CULTURE</li>
+								<li class="ul-dropdown-menu-mobile-li-1">A PROPOS</li>
+								<li class="ul-dropdown-menu-mobile-li-1">AUTEURS</li>
+								<li class="ul-dropdown-menu-mobile-li-1">PROPOSER UN ARTICLE</li>
+					    </ul>
+					  </div>
+							<div class="barre-rech-mobile" title="Rechercher">
+							</div>
+							<div class="barre-newsletter-mobile" title="S'abonner a la newsletter">
+						</div>
+					</div>
+        </div><!--/.container-fluid -->
+      </nav>
+
+			<div class="logo" style="width: fit-content">
+				<img src="http://www.instantvitalite.fr/wp-content/themes/instant_vitalite/img/logo-instant-vitalite-ag2r.png" style="margin-bottom: 30px;">
+			</div>
+			<div class="menu2">
+				<ul>
+					<li><u>A propos</u></li>
+					<li><u>Auteurs</u></li>
+					<li><u>Proposer un article</u></li>
+				</ul>
+			</div>
+			<ul class="menu">
+				<li style="color: white;">TOUS LES ARTICLES</li>
+				<li style="color: white;">SANTÉ, SPORT & BIEN-ETRE</li>
+				<li style="color: white;">CONVIVIALITÉ & GASTRONOMIE</li>
+				<li style="color: white;">CULTURE</li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="row" >
+		<div class="accueil" id="accueil">
+			<div class="main row">
+
+				<div class="article-content col-xs-12 col-sm-12 col-md-5 ">
+					<div class="article">
+						<div class="image1" style="position: relative;">
+							<img src="image1.jpg" alt="">
+							<div class="texte-sur-image">
+								<p>
+									EVÉNEMENT
+								</p>
+								<p>
+									CYCLOTOURISME
+								</p>
+							</div>
+						</div>
+						<div class="text-article">
+							<h1>LES BATIMENTS DU VIVRE-ENSEMBLE</h1>
+							<p class="introduction">
+								L'association Simon de Cyréne crée des maisons partagées pour valides et personne handicapées
+							</p>
+							<br>
+							<p class="date">
+								2017
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="article-content col-xs-12 col-sm-12 col-md-5 ">
+					<div class="article">
+						<div class="image1" style="position: relative;">
+							<img src="image2.jpg" alt="">
+							<div class="texte-sur-image">
+								<p>
+									EVÉNEMENT
+								</p>
+								<p>
+									CYCLOTOURISME
+								</p>
+							</div>
+							<div class="text-article2">
+								<h1>QUAND LES VOIX S'ÉLÈVENT A SAINT-ÉMILION</h1>
+								<p class="introduction">
+									La 4e édition du festival Vino Voce donne rendez-vous & tous les amoureux de la voix
+								</p>
+								<br>
+								<p class="date">
+									Du 8 au 10 septembre 2017
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="article-content col-xs-12 col-sm-12 col-md-5 ">
+					<div class="article">
+						<div class="image3" style="position: relative;">
+							<img src="image3.jpg" alt="">
+							<div class="texte-sur-image">
+								<p>
+									EVENEMENT
+								</p>
+								<p>
+									CYCLOTOURISME
+								</p>
+							</div>
+						</div>
+						<div class="text-article2">
+							<h1>QUAND LES VOIX S'ÉLÈVENT A SAINT-ÉMILION</h1>
+							<p class="introduction">
+								La 4e édition du festival Vino Voce donne rendez-vous & tous les amoureux de la voix
+							</p>
+							<br>
+							<p class="date">
+								Du 8 au 10 septembre 2017
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="article-content col-xs-12 col-sm-12 col-md-5 ">
+					<div class="article">
+						<div class="image1" style="position: relative;">
+							<img src="image1.jpg" alt="">
+							<div class="texte-sur-image">
+								<p>
+									EVÉNEMENT
+								</p>
+								<p>
+									CYCLOTOURISME
+								</p>
+							</div>
+						</div>
+						<div class="text-article">
+							<h1>LES BATIMENTS DU VIVRE-ENSEMBLE</h1>
+							<p class="introduction">
+								L'association Simon de Cyréne crée des maisons partagées pour valides et personne handicapées
+							</p>
+							<br>
+							<p class="date">
+								2017
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="article-content col-xs-12 col-sm-12 col-md-5 ">
+					<div class="article">
+						<div class="image1" style="position: relative;">
+							<img src="image2.jpg" alt="">
+							<div class="texte-sur-image">
+								<p>
+									EVÉNEMENT
+								</p>
+								<p>
+									CYCLOTOURISME
+								</p>
+							</div>
+							<div class="text-article2">
+								<h1>QUAND LES VOIX S'ÉLÈVENT A SAINT-ÉMILION</h1>
+								<p class="introduction">
+									La 4e édition du festival Vino Voce donne rendez-vous & tous les amoureux de la voix
+								</p>
+								<br>
+								<p class="date">
+									Du 8 au 10 septembre 2017
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="article-content col-xs-12 col-sm-12 col-md-5 ">
+					<div class="article">
+						<div class="image3" style="position: relative;">
+							<img src="image3.jpg" alt="">
+							<div class="texte-sur-image">
+								<p>
+									EVENEMENT
+								</p>
+								<p>
+									CYCLOTOURISME
+								</p>
+							</div>
+						</div>
+						<div class="text-article2">
+							<h1>QUAND LES VOIX S'ÉLÈVENT A SAINT-ÉMILION</h1>
+							<p class="introduction">
+								La 4e édition du festival Vino Voce donne rendez-vous & tous les amoureux de la voix
+							</p>
+							<br>
+							<p class="date">
+								Du 8 au 10 septembre 2017
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div><!--/.main-row -->
+
+		</div><!--/.accueil -->
+
+	</div><!--/.row -->
+
+		<span class="chargement">
+			<span>CHARGER PLUS D'ARTICLES</span>
+		</span>
+		<div class="footer">
+			<div class="flash-actu">
+				<div class="flash-actu-container">
+					<div class="Recevoir-les-flash">
+						Recevoir les flash actus INSTANT Vitalité
+					</li>
+				</div>
+
+				<nav class="nav-dropdown-bas">
+					<a class="dropdown-togglee">Tous les articles</a>
+						<ul class="dropdown">
+			  			<li><a>Culture</a></li>
+			  			<li><a>Santé,sport & bien-etre</a></li>
+			  			<li><a>Convivialité & Gastronomie</a></li>
+			  			<li><a>Tous les articles</a></li>
+						</ul>
+				</nav>
+				<input id="input-flash-info2" type="text" name="" value="" placeholder="Adresse mail">
+				<button class="bouton-flash" type="button" name="button">OK</button>
+	</div>
+	</div>
+		<div class="plan-du-site">
+
+
+			<ul class="Mentiens-legale">
+				<li>MENTIONS LÉGALES</li>
+				<li class="barre">NOUS CONTACTEZ</li>
+				<li class="barre">PLAN DU SITE</li>
+				<li class="barre">Les sites d'AG2R LA MONDIALE</li>
+				<li style="list-style: none">
+					<button class="Button" type="button" name="button"><img class="img-button" src="plus-bleu-16.png" alt=""style="margin-top: -12px;position: absolute;"></button>
+				</li>
+			</ul>
+			<div class="extensions" id="extensions-cache">
+				<div class="ca" style="display:-webkit-inline-box">
+					<a class="titre-colonne1">SITE SERVICES DU GROUPE</a>
+					<ul class="colonne1">
+						<li class="azer1">Portail Groupe</li>
+						<li>Vente en ligne</li>
+						<li>Clientèle patrimoniale</li>
+						<li>Partenariat patrimoniale</li>
+						<li>Aidons les notres</li>
+						<li>Rapprochons-nous</li>
+						<li>Préparons ma retraite</li>
+						<li>Le Social Club</li>
+						<li>International</li>
+						<li>Institutions de la coiffure</li>
+						<li>Epargne salariale</li>
+						<li>Terciane</li>
+						<li>Parteo</li>
+						<li>Réunica</li>
+						<li>Arpege Prévoyance</li>
+						<li>Juliett</li>
+					</ul>
+					<a class="titre-colonne2">AUTRE SITES DU GROUPE</a>
+					<ul class="colonne2">
+						<li class="azer2">Cyclysme</li>
+						<li>Voile</li>
+						<li>Voyages AG2R LA MONDIALE</li>
+						<li>Magasine Pleine Vie</li>
+						<li>Fondation AG2R LA MONDIALE</li>
+						<li>Le Cercle de l'Épargne</li>
+						<li>Magazine SOLIDARITÉ</li>
+						<li>Magazine EXPERTISES</li>
+					</ul>
+					<a class="titre-colonne3">MUTUELLES PARTENAIRES DU GROUPE</a>
+					<ul class="colonne3">
+						<li class="azer3">Cyclysme</li>
+						<li>La Frontalière</li>
+						<li>Leroy Somer</li>
+						<li>Mutuelle Interprofessionnelle des Antilles et de Guyane</li>
+						<li>Mutuelle des Professions Judiciaires</li>
+						<li>La Mutuelle du Midi</li>
+						<li>Mutualis</li>
+						<li>Prado Mutuelle</li>
+						<li>SMACL Santé</li>
+						<li>UMS</li>
+						<li>Mutuelle du Ministère de la Justice</li>
+						<li>ACORIS Mutuelles</li>
+						<li>Les Ménages Prévoyants</li>
+						<li>ViaSanté</li>
+						<li>Muta Santé</li>
+						<li>Mutuelle des Hospitaliers de la Vienne</li>
+						<li>Mutuelle Nationale des Sapeurs-Pompiers de France</li>
+					</ul>
+					<a class="titre-colonne4">CAISSES DE RETRAITE PARTENAIRES DU GROUPE</a>
+					<ul class="colonne4">
+						<li class="azer4">Cyclysme</li>
+						<li>IRCOM La Verrière</li>
+						<li>CGRR</li>
+						<li>IGRC</li>
+					</ul>
+					<a class="copyright">© AG2R LA MONDIALE 2017</a>
+				</div>
+			</div>
+		</div>
+		<a href="#header" class="scroll">HAUT DE PAGE</a>
+	</body>
+</html>
